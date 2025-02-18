@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .wrapper {
+            height: 800px;
+            width: 1089px;
+            background-color: antiquewhite;
+        }
+        
+        .menu li {
+            height: 50px;
+            width: 150px;
+            background-color: azure;
+            list-style-type: none;
+            text-indent: 20px;
+            border: 1px dotted yellow;
+            position: absolute;
+        }
+        
+        li a {
+            text-decoration: none;
+        }
+        
+        .menu li:hover {
+            background-color: cadetblue;
+        }
+        
+        li:hover>a {
+            color: crimson;
+            font-weight: bold;
+        }
+        
+        nav {
+            position: relative;
+        }
+        
+        .menu li:nth-child(5) {
+            top: 40px;
+            right: 100px;
+            transform: rotate(20deg);
+        }
+        
+        .menu li:nth-child(4) {
+            top: 10px;
+            right: 270px;
+            line-height: 50px;
+        }
+        
+        .menu li:nth-child(3) {
+            top: 10px;
+            right: 440px;
+            line-height: 50px;
+        }
+        
+        .menu li:nth-child(2) {
+            top: 10px;
+            right: 610px;
+            line-height: 50px;
+        }
+        
+        .menu li:nth-child(1) {
+            top: 10px;
+            right: 780px;
+            line-height: 50px;
+        }
+        
+        li input {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="">ITEM1</a></li>
+                <li><a href="">ITEM2</a></li>
+                <li><a href="">ITEM3</a></li>
+                <li><a href="">ITEM4</a></li>
+                <li><a href="">ITEM5</a>
+                    <input type="text" name="ttName" id="txtName">
+                    <button type="submit">GO</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
